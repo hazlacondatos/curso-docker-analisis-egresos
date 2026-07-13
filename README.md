@@ -98,6 +98,18 @@ borrarlos y empezar de cero: `docker compose down -v`.
 └── resultados/         # Salidas del análisis (se generan al correr)
 ```
 
+## Retos para seguir practicando
+
+El proyecto funciona tal cual; ahora hazlo tuyo. De menos a más:
+
+1. **Otro indicador.** Modifica `analisis.R` para calcular también la edad
+   promedio por servicio (o los egresos por sexo). Reconstruye la imagen y corre.
+2. **Un gráfico.** Agrega una visualización de la estadía por servicio y guárdala
+   en `resultados/` como PNG. Tendrás que sumar `ggplot2` a `renv.lock`.
+3. **Otros datos.** Reemplaza `datos/pacientes.csv` por uno tuyo con las mismas
+   columnas y comprueba que todo corre igual, **sin tocar la imagen**: el entorno
+   queda fijo y los datos entran por fuera.
+
 ## El curso
 
 Este proyecto es el capstone del curso **Docker para Ciencia de Datos**. Si
