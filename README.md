@@ -50,17 +50,25 @@ Abre **http://localhost:8787** (usuario `rstudio`, la clave de tu `.env`), abre
 ## La solución
 
 Cuando quieras comparar, la versión correcta es la rama **`main`** de este mismo
-repo:
+repo. Al clonar con `git clone -b ejercicio` ya se descargó, como `origin/main`,
+así que tienes dos caminos:
+
+Ver exactamente qué cambiaba, sin moverte de rama:
 
 ```bash
-git checkout main
+git diff ejercicio origin/main
 ```
 
-o revisa el `diff` para ver exactamente qué cambiaba:
+O pasarte a la solución (git crea la rama local a partir de `origin/main`):
 
 ```bash
-git diff ejercicio main
+git switch main
 ```
+
+> **Nota.** Fíjate en el `origin/main` del `diff`: tras `clone -b ejercicio`,
+> la rama `main` existe como rama remota, no local, y `git diff ejercicio main`
+> (sin `origin/`) daría "unknown revision". Si además clonaste con
+> `--single-branch`, trae primero la otra rama con `git fetch origin main`.
 
 > ⚠️ **Sobre los datos.** `datos/pacientes.csv` es **100% sintético** (inventado).
 > Por eso está en el repo. En un proyecto real con datos de personas, `datos/`
