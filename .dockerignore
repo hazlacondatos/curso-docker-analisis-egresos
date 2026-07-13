@@ -1,6 +1,3 @@
-# Lo que NUNCA entra a la imagen (Módulo 10).
-# Los datos entran por bind mount al correr, jamás por COPY al construir.
-datos/
 resultados/
 .env
 .git

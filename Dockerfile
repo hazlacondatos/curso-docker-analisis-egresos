@@ -16,7 +16,7 @@ RUN R -q -e "install.packages('renv', repos = 'https://cloud.r-project.org')"
 COPY renv.lock renv.lock
 RUN R -q -e "renv::restore()"
 
-COPY analisis.R analisis.R
+COPY . .
 
 # Buenas prácticas de seguridad (Módulo 13): correr como usuario sin privilegios.
 RUN useradd --create-home analista && chown -R analista:analista /proyecto
