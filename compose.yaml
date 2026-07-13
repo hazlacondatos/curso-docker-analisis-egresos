@@ -1,0 +1,23 @@
+services:
+  rstudio:
+    image: rocker/rstudio:4.6.1
+    ports:
+      - "127.0.0.1:8787:8787"
+    volumes:
+      - .:/home/rstudio/proyecto
+    environment:
+      - PASSWORD=${RSTUDIO_PASSWORD}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    depends_on:
+      - db
+
+  db:
+    image: postgres:17
+    environment:
+      - POSTGRES_DB=pacientes
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

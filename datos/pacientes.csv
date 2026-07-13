@@ -1,0 +1,13 @@
+id_egreso,fecha_ingreso,fecha_egreso,servicio,diagnostico,edad,sexo,dias_estada
+E001,2026-03-02,2026-03-06,medicina,neumonia,67,M,4
+E002,2026-03-03,2026-03-05,cirugia,apendicitis,34,F,2
+E003,2026-03-05,2026-03-12,medicina,neumonia,71,F,7
+E004,2026-03-08,2026-03-09,urgencia,bronquitis,5,M,1
+E005,2026-03-10,2026-03-24,cirugia,fractura_cadera,79,F,14
+E006,2026-03-11,2026-03-14,pediatria,bronquitis,2,F,3
+E007,2026-03-15,2026-03-18,medicina,diabetes_descompensada,58,M,3
+E008,2026-03-17,2026-03-18,urgencia,crisis_asmatica,9,F,1
+E009,2026-03-20,2026-03-27,cirugia,colecistitis,45,M,7
+E010,2026-03-22,2026-03-26,pediatria,neumonia,4,M,4
+E011,2026-03-25,2026-04-03,medicina,insuficiencia_cardiaca,82,F,9
+E012,2026-03-30,2026-04-01,urgencia,fractura_muneca,28,M,2

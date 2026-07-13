@@ -1,0 +1,12 @@
+# Secretos: nunca se versionan (Módulos 12 y 13).
+.env
+
+# Resultados generados: se recrean al correr el análisis.
+resultados/*
+!resultados/.gitkeep
+
+# renv: la librería local se reconstruye desde renv.lock.
+renv/library/
+renv/local/
+renv/cellar/
+renv/staging/
